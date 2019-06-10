@@ -167,6 +167,7 @@ bindsym $mod+Shift+0 move container to workspace $ws10
 assign [class="Slack"] $ws2
 assign [class="Firefox"] $ws4
 assign [class="Chromium"] $ws6
+assign [class="DBeaver"] $ws8
 
 assign [class="jetbrains-phpstorm"] $ws3
 assign [class="jetbrains-idea"] $ws3
@@ -175,6 +176,7 @@ assign [class="VSCodium"] $ws5
 # auto start apps 
 exec --no-startup-id nitrogen --restore
 exec --no-startup-id compton --config $HOME/.config/compton/config -b
+exec --no-startup-id slack
 
 # reload the configuration file
 bindsym $mod+Shift+c reload

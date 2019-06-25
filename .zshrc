@@ -98,5 +98,10 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+alias ls=ls_extended
 alias vim=nvim
 alias dockerport='sudo lsof -i -P -n | grep 5432'
+alias dps='docker ps -a --format "{{.ID}} ({{.Names}}): {{.Status}}"'
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /usr/bin/terraform terraform

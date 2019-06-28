@@ -1,6 +1,8 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+export DYNAMO_ENDPOINT=http://localhost:8000
+
 # Path to your oh-my-zsh installation.
 export ZSH="/home/sant1g/.oh-my-zsh"
 
@@ -100,8 +102,21 @@ source $ZSH/oh-my-zsh.sh
 
 alias ls=ls_extended
 alias vim=nvim
-alias dockerport='sudo lsof -i -P -n | grep 5432'
+alias pgport='sudo lsof -i -P -n | grep 5432'
 alias dps='docker ps -a --format "{{.ID}} ({{.Names}}): {{.Status}}"'
+alias aws='aws --endpoint-url http://localhost:8000'
+
+# Functions
+#
+# Commit ('git commit -m' replacement) / Usage: 
+# $ cm 🎉 Initial commit
+function cm () {
+	MSG="${@}"
+	FILE_NAME="commits_`date +%F`.txt"
+
+	echo $MSG >> $HOME/$FILE_NAME
+	git commit -m "$MSG"
+}
 
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/bin/terraform terraform

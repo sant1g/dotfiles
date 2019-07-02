@@ -1,0 +1,19 @@
+.mtk5, .mtk10, .mtk6 {
+  font-family: "Product Sans" !important;
+  font-size: 1.03em;
+  font-style: normal !important;
+}
+
+.mtk8 {
+  font-family: 'Indie Flower';
+  font-size: 1.3em;
+  font-style: normal !important;
+}
+
+.tabs-container .monaco-icon-label-description-container .label-name,
+.sidebar .monaco-icon-label-description-container .label-name,
+.quick-open-row .monaco-icon-label-description-container .label-name,
+.button, [class^="ced"] {
+  font-family: 'Product Sans', 'Roboto', -apple-system,BlinkMacSystemFont,Segoe WPC,Segoe UI,HelveticaNeue-Light,Ubuntu,Droid Sans,sans-serif !important;
+  font-size: 1em;
+}

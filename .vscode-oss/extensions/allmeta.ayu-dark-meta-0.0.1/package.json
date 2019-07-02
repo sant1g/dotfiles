@@ -1,0 +1,35 @@
+{
+	"name": "ayu-dark-meta",
+	"displayName": "Ayu Dark Meta",
+	"description": "Ayu Dark was too dark for some environments. Changed some colors so it's a bit more readable.",
+	"version": "0.0.1",
+	"publisher": "allmeta",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Allmeta/Ayu-Dark-Meta"
+	},
+	"engines": {
+		"vscode": "^1.30.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"keywords": [
+		"theme",
+		"ayu"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "Ayu Dark Meta",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Ayu Dark Meta-color-theme.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "4426340d-3a99-466c-bc99-ad94bc4e562d",
+		"publisherId": "bebbdfe1-4c4b-44cd-b6f0-86ff3d563adf",
+		"publisherDisplayName": "allmeta"
+	}
+}

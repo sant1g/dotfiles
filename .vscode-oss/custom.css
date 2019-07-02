@@ -1,12 +1,6 @@
-.mtk5, .mtk10, .mtk6 {
+.mtk5, .mtk8 {
   font-family: "Product Sans" !important;
   font-size: 1.03em;
-  font-style: normal !important;
-}
-
-.mtk8 {
-  font-family: 'Indie Flower';
-  font-size: 1.3em;
   font-style: normal !important;
 }
 
